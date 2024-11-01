@@ -35,10 +35,15 @@ contract Raffle {
       // Named events with the function name reversed
 
       emit RaffleEnter(msg.sender);
-
     }
 
-    // function pickRandomWinner() returns () {}
+    function pickRandomWinner() external {
+      // request the random number
+      // once we get it, do something with it
+    }
+
+
+    /* View / Pure functions */
     function getEntranceFee() public view returns (uint256) {
         return i_entranceFee;
     }
